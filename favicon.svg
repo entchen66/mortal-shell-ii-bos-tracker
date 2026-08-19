@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="emberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9900" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#ff3700" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="obsidianGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d2838"/>
+      <stop offset="50%" stop-color="#181520"/>
+      <stop offset="100%" stop-color="#0c0a10"/>
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Sigil Circle -->
+  <circle cx="32" cy="32" r="30" fill="#0c0a12" stroke="#451a03" stroke-width="2"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#d97706" stroke-width="0.75" stroke-dasharray="4 2" opacity="0.6"/>
+
+  <!-- Ember Backlight -->
+  <circle cx="32" cy="32" r="20" fill="url(#emberGlow)" opacity="0.35"/>
+
+  <!-- Hardened Shell Visor / Helmet Shape -->
+  <path d="M 32 8 C 20 8 14 16 12 28 C 10 38 16 52 32 58 C 48 52 54 38 52 28 C 50 16 44 8 32 8 Z" 
+        fill="url(#obsidianGrad)" stroke="url(#goldTrim)" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Helmet Center Crest & Hardening Cracks -->
+  <path d="M 32 10 L 32 30 M 32 36 L 32 54" stroke="#d97706" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 22 18 L 32 26 L 42 18" fill="none" stroke="#78350f" stroke-width="1.5"/>
+  <path d="M 18 30 L 26 34 L 20 44" fill="none" stroke="#451a03" stroke-width="1.2"/>
+  <path d="M 46 30 L 38 34 L 44 44" fill="none" stroke="#451a03" stroke-width="1.2"/>
+
+  <!-- Glowing Ember Eye Slits -->
+  <polygon points="22,30 30,32 29,35 21,32" fill="#ffb703" filter="drop-shadow(0 0 2px #ff4500)"/>
+  <polygon points="42,30 34,32 35,35 43,32" fill="#ffb703" filter="drop-shadow(0 0 2px #ff4500)"/>
+</svg>

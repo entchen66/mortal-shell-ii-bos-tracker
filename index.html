@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mortal Shell II - Boss Tracker</title>
+  <meta name="description" content="Official interactive Soulslike boss checklist and codex for Mortal Shell II. Track defeated bosses, harvest sacred glands, and study combat tactics.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Dark Atmospheric Background & Floating Embers Canvas -->
+  <div class="dark-fog-layer"></div>
+  <canvas id="ambient-particles" class="ambient-particles-canvas"></canvas>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-topbar">
+      <div class="game-badge">
+        <svg class="game-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span id="game-badge-text">Official Boss Tracker</span>
+      </div>
+
+      <div class="header-actions">
+        <!-- Ambient Music Toggle -->
+        <button class="music-toggle-btn" id="btn-music-toggle" onclick="toggleSoundtrack()" title="Dark Ambient Soundtrack">
+          ⚔️ Musik: Aus
+        </button>
+
+        <!-- Language Switcher with Crisp Vector Flags -->
+        <button class="lang-btn" id="btn-lang-de" onclick="setLanguage('de')" title="Deutsch">
+          <img src="assets/flags/de.svg" class="flag-icon" alt="DE"> DE
+        </button>
+        <button class="lang-btn" id="btn-lang-en" onclick="setLanguage('en')" title="English">
+          <img src="assets/flags/en.svg" class="flag-icon" alt="EN"> EN
+        </button>
+      </div>
+    </div>
+
+    <div class="main-title-wrap">
+      <h1 class="main-title">
+        <span class="title-ornament">❖</span>
+        <span>Mortal Shell II</span>
+        <span class="title-ornament">❖</span>
+      </h1>
+      <p class="subtitle" id="main-subtitle">
+        Vanquish the ancient sovereigns, harvest the sacred glands, and reclaim the lost husks of the abyss.
+      </p>
+    </div>
+  </header>
+
+  <!-- Global Progress & Resolve Meter Section -->
+  <section class="progress-section">
+    <div class="progress-card">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-icon">⚔️</div>
+          <div class="stat-meta">
+            <span class="stat-label" id="stat-bosses-lbl">Bosse Besiegt</span>
+            <span class="stat-value blood" id="stat-bosses-val">0 / 39</span>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon">🔥</div>
+          <div class="stat-meta">
+            <span class="stat-label" id="stat-glands-lbl">Leuchtfeuer Erreicht</span>
+            <span class="stat-value gold" id="stat-glands-val">0 / 25</span>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon">⛯</div>
+          <div class="stat-meta">
+            <span class="stat-label" id="stat-tar-lbl">Gesammelter Teer</span>
+            <span class="stat-value resolve" id="stat-tar-val">0 ⛯</span>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-meta">
+            <span class="stat-label" id="stat-progress-lbl">Gesamtfortschritt</span>
+            <span class="stat-value gold" id="stat-progress-val">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="resolve-meter-wrapper">
+        <div class="resolve-meter-header">
+          <span id="resolve-meter-lbl">ENTENTSCHLOSSENHEIT / VERHÄRTUNG</span>
+          <span id="resolve-meter-status">STATUS: PILGER</span>
+        </div>
+        <div class="resolve-track">
+          <div class="resolve-fill" id="resolve-progress-fill"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Controls, Search & Filters -->
+  <section class="controls-section">
+    <div class="controls-bar">
+      <div class="search-box-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" class="search-input" placeholder="Boss, Leuchtfeuer, Ort oder Taktik suchen..." autocomplete="off">
+      </div>
+
+      <div class="filter-group-wrap">
+        <select id="filter-region" class="filter-select"></select>
+        <select id="filter-type" class="filter-select"></select>
+        <select id="filter-status" class="filter-select"></select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Regional Tracker Container -->
+  <main class="main-tracker-content" id="tracker-container">
+    <!-- Populated dynamically by script.js -->
+  </main>
+
+  <!-- Boss Codex Modal (Detailed Inspector) -->
+  <div class="modal-backdrop" id="codex-modal-backdrop" onclick="closeBossCodex(event)">
+    <div class="codex-modal" onclick="event.stopPropagation()">
+      <header class="codex-header">
+        <button class="modal-close-btn" onclick="closeBossCodex()">&times;</button>
+        <span class="codex-type" id="modal-type">Hauptboss</span>
+        <h2 class="codex-title" id="modal-title">Boss Name</h2>
+        <div class="codex-epithet" id="modal-epithet">Epithet / Title</div>
+      </header>
+
+      <div class="codex-body">
+        <div class="codex-portrait-wrap">
+          <img id="modal-portrait" class="codex-portrait-img" src="" alt="Boss Portrait">
+        </div>
+
+        <blockquote class="codex-quote" id="modal-quote">
+          "The tar remembers what flesh chooses to forget..."
+        </blockquote>
+
+        <div class="codex-grid">
+          <div class="codex-info-card">
+            <div class="codex-card-title" id="modal-lbl-beacon">🔥 Nächstes Leuchtfeuer</div>
+            <div class="codex-card-content" id="modal-location">Village Outskirts Beacon</div>
+          </div>
+          <div class="codex-info-card">
+            <div class="codex-card-title" id="modal-lbl-shell">🛡️ Empfohlene Hülle</div>
+            <div class="codex-card-content" id="modal-shell">Harros the Vassal</div>
+          </div>
+          <div class="codex-info-card">
+            <div class="codex-card-title" id="modal-lbl-loc">🗺️ Genaue Position</div>
+            <div class="codex-card-content" id="modal-gland">Location text...</div>
+          </div>
+          <div class="codex-info-card">
+            <div class="codex-card-title" id="modal-lbl-reward">⛯ Belohnung & Teer</div>
+            <div class="codex-card-content" id="modal-reward">1,200 Tar, 4 Glimpses</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="codex-section-title" id="modal-lbl-weak">⚡ Schwächen & Konter</div>
+          <div class="codex-info-card" id="modal-weakness">
+            Parade-Konter • Stein-Betäubung • Naylshotte-Schusswaffe
+          </div>
+        </div>
+
+        <div>
+          <div class="codex-section-title" id="modal-lbl-lore">📜 Fundort & Arena-Beschreibung</div>
+          <div class="codex-info-card" id="modal-lore" style="line-height: 1.7;">
+            Boss location description...
+          </div>
+        </div>
+
+        <div>
+          <div class="codex-section-title" id="modal-lbl-strat">⚔️ Kampftaktik & Strategie</div>
+          <div class="strategy-box" id="modal-strategy">
+            Boss strategy details...
+          </div>
+        </div>
+      </div>
+
+      <footer class="codex-footer">
+        <button class="codex-slain-toggle-btn" id="modal-slain-btn" onclick="toggleModalBossSlain()">
+          ⚔️ Als Besiegt Markieren
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Cinematic Victory Banner Overlay -->
+  <div class="victory-banner-overlay" id="victory-banner-overlay">
+    <div class="victory-text-main" id="victory-banner-main">FEIND BESIEGT</div>
+    <div class="victory-text-sub" id="victory-banner-sub">DROEG, DER EROBERER</div>
+  </div>
+
+  <!-- Quick Navigation FAB (Fast Travel) -->
+  <div class="quick-nav-fab" id="quick-nav-container">
+    <button class="fab-btn" onclick="toggleQuickNavDrawer(arguments[0])" title="Schnellreise">
+      🧭
+    </button>
+    <div class="quick-nav-drawer" id="quick-nav-drawer">
+      <div class="quick-nav-header">
+        <span id="quick-nav-header-title">Reiseziele</span>
+      </div>
+      <div id="quick-nav-list">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p id="footer-credits-text">Mortal Shell II & alle zugehörigen Artworks sind Eigentum von Cold Symmetry & Playstack.</p>
+      <p style="font-size: 11px; opacity: 0.7;">Crafted with pure HTML5, CSS3 & Vanilla JavaScript. Zero build steps required.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="bosses_data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
