@@ -816,10 +816,29 @@ document.addEventListener("DOMContentLoaded", () => {
   initAmbientCanvas();
 
   const searchInput = document.getElementById("search-input");
+  const clearBtn = document.getElementById("search-clear-btn");
+
+  function updateClearButton() {
+    if (clearBtn) {
+      clearBtn.style.display = searchInput.value.trim().length > 0 ? "flex" : "none";
+    }
+  }
+
   searchInput.addEventListener("input", (e) => {
     searchQuery = e.target.value;
+    updateClearButton();
     renderTracker();
   });
+
+  window.clearSearch = function() {
+    searchQuery = "";
+    if (searchInput) {
+      searchInput.value = "";
+      searchInput.focus();
+    }
+    updateClearButton();
+    renderTracker();
+  };
 
   document.getElementById("filter-region").addEventListener("change", (e) => {
     selectedRegionFilter = e.target.value;
