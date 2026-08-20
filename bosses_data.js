@@ -35,8 +35,8 @@ const MORTAL_SHELL_BOSSES = [
       "Naylshotte-Schusswaffe",
       "Diener-Umlenkung"
     ],
-    "tarReward": "1,200 Tar, Gloom x360",
-    "tarRewardDE": "1.200 Teer, Düster x360",
+    "tarReward": "1,200 Gloom, 360 Gloom",
+    "tarRewardDE": "1.200 Düsteressenz, 360 Düsteressenz",
     "strategy": {
       "en": "Calls forth minions who explode in bloody bursts. Dodge away when they charge, then close in to strike while he pauses. Use Perfect Guards or Naylshotte rounds.",
       "de": "Ruft explodierende Diener herbei. Weiche aus und gehe in den Nahkampf über, wenn er pausiert. Nutze Perfekte Paraden oder Naylshotte-Schüsse."
@@ -74,8 +74,8 @@ const MORTAL_SHELL_BOSSES = [
       "Kopf-Schwachpunkt",
       "Verbranntes Bildnis"
     ],
-    "tarReward": "1,500 Tar, Burnt Effigy x1",
-    "tarRewardDE": "1.500 Teer, Verbranntes Bildnis x1",
+    "tarReward": "1,500 Gloom, Burnt Effigy x1",
+    "tarRewardDE": "1.500 Düsteressenz, Verbranntes Bildnis x1",
     "strategy": {
       "en": "Overwhelm with Break damage and Naylshotte shots before entering melee. Dodge or harden against its lunges and strike its head.",
       "de": "Überwältige die Tentakelbestie mit Haltungsbruch und Naylshotte-Schüssen. Weiche Sprunghieben aus und attackiere den Kopf."
@@ -113,8 +113,8 @@ const MORTAL_SHELL_BOSSES = [
       "Frostschaden",
       "Vatras Siegel"
     ],
-    "tarReward": "2,000 Tar, Vatra's Seal x1",
-    "tarRewardDE": "2.000 Teer, Vatras Siegel x1",
+    "tarReward": "2,000 Gloom, Vatra's Seal x1",
+    "tarRewardDE": "2.000 Düsteressenz, Vatras Siegel x1",
     "strategy": {
       "en": "Keep distance during his 4-strike axe spin. Harden on the final blow, then punish him during his lengthy recovery.",
       "de": "Halte während der 4er-Axtdrehung Abstand, verhärte dich beim finalen Schlag und nutze die Erholungsphase für schwere Hiebe."
@@ -153,7 +153,7 @@ const MORTAL_SHELL_BOSSES = [
       "Flammeninfusion"
     ],
     "tarReward": "5,754 Gloom, Arbiter's Prize x1",
-    "tarRewardDE": "5.754 Düster, Schlichter-Trophäe x1",
+    "tarRewardDE": "5.754 Düsteressenz, Schlichter-Trophäe x1",
     "strategy": {
       "en": "His wide two-handed sword swings are easily telegraphed. Parry his horizontal swings for devastating critical ripostes.",
       "de": "Seine weiten Zweihänderschwünge sind sehr gut lesbar. Pariere für kritische Konter."
@@ -190,7 +190,7 @@ const MORTAL_SHELL_BOSSES = [
       "Projektil-Abwehr"
     ],
     "tarReward": "3,018 Gloom, Volatile Fragment x1",
-    "tarRewardDE": "3.018 Düster, Flüchtiges Fragment x1",
+    "tarRewardDE": "3.018 Düsteressenz, Flüchtiges Fragment x1",
     "strategy": {
       "en": "Dodge his tracking magic projectiles. When he creates phantom copies, hit each illusion once to immediately disperse it.",
       "de": "Weiche Zielsuchprojektilen aus. Triff die Phantome im Laufschritt einmal, um sie sofort aufzulösen."
@@ -227,7 +227,7 @@ const MORTAL_SHELL_BOSSES = [
       "Kultisten zuerst fokussieren"
     ],
     "tarReward": "886 Gloom, Coin x50",
-    "tarRewardDE": "886 Düster, 50 Münzen",
+    "tarRewardDE": "886 Düsteressenz, 50 Münzen",
     "strategy": {
       "en": "Composed of Frog Mama and three poison cultists. Use Tiel's poison-healing skills or play the Troubadour's Lute to have them fight each other!",
       "de": "Besteht aus Frog Mama und 3 Giftkultisten. Nutze Tiel zur Gift-Heilung oder spiele die Laute, damit sie sich gegenseitig angreifen."
@@ -264,7 +264,7 @@ const MORTAL_SHELL_BOSSES = [
       "Laute-Verwirrung"
     ],
     "tarReward": "6,462 Gloom, Sheephead Totem x1",
-    "tarRewardDE": "6.462 Düster, Schafskopf-Totem x1",
+    "tarRewardDE": "6.462 Düsteressenz, Schafskopf-Totem x1",
     "strategy": {
       "en": "Slice at him immediately. Chase down the fast Shepherd while handling ramming devil sheep. Killing sheep inflicts Break damage on him.",
       "de": "Triff ihn direkt beim Start. Das Töten der anstürmenden Teufelsschafe fügt dem Hirten direkten Haltungsbruch zu."
@@ -301,7 +301,7 @@ const MORTAL_SHELL_BOSSES = [
       "Giftinfusion"
     ],
     "tarReward": "11,344 Gloom, Magdalena's Memento x1",
-    "tarRewardDE": "11.344 Düster, Magdalenas Andenken x1",
+    "tarRewardDE": "11.344 Düsteressenz, Magdalenas Andenken x1",
     "strategy": {
       "en": "Magdalena rides a rocket mobility scooter doing fiery donuts! Bait her into driving into the arena walls to stun her for 4 seconds.",
       "de": "Rast in einem feurigen Raketen-Rollstuhl umher. Locke sie gegen die Arenawände – bei Kollision ist sie 4 Sekunden wehrlos betäubt."
@@ -337,8 +337,8 @@ const MORTAL_SHELL_BOSSES = [
       "Bodenstarre ausnutzen",
       "Schwere Hiebe"
     ],
-    "tarReward": "1,800 Tar, 6 Glimpses",
-    "tarRewardDE": "1.800 Teer, 6 Blicke",
+    "tarReward": "1,800 Gloom, 6 Glimpses",
+    "tarRewardDE": "1.800 Düsteressenz, 6 Blicke",
     "strategy": {
       "en": "Two Leechtongues and one Bell Snail. Avoid their lunges and strike while their heads are stuck in the mud, then crush the snail.",
       "de": "Zwei Blutegelzungen und eine Schnecke. Weiche Sprüngen aus und schlage zu, während die Köpfe feststecken."
@@ -375,7 +375,7 @@ const MORTAL_SHELL_BOSSES = [
       "Wirbel nach Brüllen ausweichen"
     ],
     "tarReward": "2,331 Gloom, Synaptic Vessel x1, Grisha Remnant x1",
-    "tarRewardDE": "2.331 Düster, Synaptisches Gefäß x1, Grisha-Relikt x1",
+    "tarRewardDE": "2.331 Düsteressenz, Synaptisches Gefäß x1, Grisha-Relikt x1",
     "strategy": {
       "en": "Parry blade swipes and inflict Break damage with the Battle Axe to knock it down. Watch for the roar before its unblockable spin.",
       "de": "Pariere Klauenhiebe und bringe sie mit der Streitaxt zu Fall. Weiche beim Brüllen vor dem Wirbelangriff zurück."
@@ -412,7 +412,7 @@ const MORTAL_SHELL_BOSSES = [
       "Feuer-Teersteine"
     ],
     "tarReward": "7,474 Gloom, Serpent Stone x1",
-    "tarRewardDE": "7.474 Düster, Schlangenstein x1",
+    "tarRewardDE": "7.474 Düsteressenz, Schlangenstein x1",
     "strategy": {
       "en": "Lizard-like vampire knight with swift scimitar slashes. When he vanishes into bats, track his landing spot and punish his recovery.",
       "de": "Vampirritter mit schnellen Krummschwerthieben. Wenn er sich in Fledermäuse auflöst, passe den Landepunkt ab."
@@ -449,7 +449,7 @@ const MORTAL_SHELL_BOSSES = [
       "Rückenangriffe"
     ],
     "tarReward": "6,935 Gloom, Tarred Fragment x1",
-    "tarRewardDE": "6.935 Düster, Teerfragment x1",
+    "tarRewardDE": "6.935 Düsteressenz, Teerfragment x1",
     "strategy": {
       "en": "Smack him with the Battle Axe to build Break damage. Dodge his unblockable boulder throws and strike his exposed back.",
       "de": "Baue mit der Streitaxt Haltungsbruch auf, weiche seinen unblockbaren Felswürfen aus und schlage in den Rücken."
@@ -486,7 +486,7 @@ const MORTAL_SHELL_BOSSES = [
       "Haltungsbruch am Bauch"
     ],
     "tarReward": "13,019 Gloom, Lost Clotstone x1",
-    "tarRewardDE": "13.019 Düster, Gerinnselstein x1",
+    "tarRewardDE": "13.019 Düsteressenz, Gerinnselstein x1",
     "strategy": {
       "en": "A grotesque fleshy colossus barfing acid and gulping foundlings. Sidestep acid breath and break his posture for a devastating maw riposte.",
       "de": "Speit Säure und schnappt nach dir. Weiche seitlich aus und attackiere den Bauch für einen Schlund-Konter."
@@ -523,7 +523,7 @@ const MORTAL_SHELL_BOSSES = [
       "Zitadellen-Hebel"
     ],
     "tarReward": "2,895 Gloom, Citadel Gate Lever x1",
-    "tarRewardDE": "2.895 Düster, Zitadellen-Torhebel x1",
+    "tarRewardDE": "2.895 Düsteressenz, Zitadellen-Torhebel x1",
     "strategy": {
       "en": "Giant crab-like Lithopod. Heavy attacks to the rock on its back crack its armor quickly. Beware the Bloodcurse drain.",
       "de": "Zerschlage den Felsen auf seinem Rücken mit schweren Schlägen. Achte auf den Blutfluch."
@@ -560,7 +560,7 @@ const MORTAL_SHELL_BOSSES = [
       "Klauenstein"
     ],
     "tarReward": "1,132 Gloom, Inflamed Clawstone x1, Grisha Remnant x1",
-    "tarRewardDE": "1.132 Düster, Entzündeter Klauenstein x1, Grisha-Relikt x1",
+    "tarRewardDE": "1.132 Düsteressenz, Entzündeter Klauenstein x1, Grisha-Relikt x1",
     "strategy": {
       "en": "Play the Troubadour's Lute to confuse both Grishas into tearing each other apart, then dispatch the remaining survivor.",
       "de": "Spiele die Laute, damit sich beide Grishas gegenseitig zerfleischen, und erledige den Überlebenden."
@@ -597,7 +597,7 @@ const MORTAL_SHELL_BOSSES = [
       "Eredrim-Freischaltung"
     ],
     "tarReward": "6,542 Gloom, Eredrim (Shell)",
-    "tarRewardDE": "6.542 Düster, Eredrim (Hülle)",
+    "tarRewardDE": "6.542 Düsteressenz, Eredrim (Hülle)",
     "strategy": {
       "en": "Tough unblockable 4-axe spin. Punish his recovery after the 4th spin, or use the Grisha Remnant to stun him.",
       "de": "Gefährliche 4-fache Axtdrehung. Schlage nach dem 4. Schwung zu oder unterbreche ihn mit Grisha-Relikten."
@@ -634,7 +634,7 @@ const MORTAL_SHELL_BOSSES = [
       "Frostschutz"
     ],
     "tarReward": "7,012 Gloom, Revered Gland x1, Grisha Remnant x1",
-    "tarRewardDE": "7.012 Düster, Ehrwürdige Drüse x1, Grisha-Relikt x1",
+    "tarRewardDE": "7.012 Düsteressenz, Ehrwürdige Drüse x1, Grisha-Relikt x1",
     "strategy": {
       "en": "Albino predator with immense speed. Harden against its double swipe and stagger it with overhead smashes.",
       "de": "Albino-Raubtier mit enormer Schnelligkeit. Verhärte dich beim Doppelhieb und kontere mit Überkopfschlägen."
@@ -670,8 +670,8 @@ const MORTAL_SHELL_BOSSES = [
       "Grisha-Überbleibsel",
       "Voltaische Krone"
     ],
-    "tarReward": "4,200 Tar, Voltaic Crown x1, Glimpse x2",
-    "tarRewardDE": "4.200 Teer, Voltaische Krone x1, Blick x2",
+    "tarReward": "4,200 Gloom, Voltaic Crown x1, Glimpse x2",
+    "tarRewardDE": "4.200 Düsteressenz, Voltaische Krone x1, Blick x2",
     "strategy": {
       "en": "Attacks with a wheel-like chakram to execute dive slams. Interrupt with heavy strikes or punish him immediately upon landing.",
       "de": "Wirft ein Chakram-Rad und stürzt herab. Schlage zu, sobald er nach einem Sprung auf dem Boden landet."
@@ -708,7 +708,7 @@ const MORTAL_SHELL_BOSSES = [
       "Flächen-Betäubung"
     ],
     "tarReward": "1,208 Gloom",
-    "tarRewardDE": "1.208 Düster",
+    "tarRewardDE": "1.208 Düsteressenz",
     "strategy": {
       "en": "Use the Troubadour's Lute to turn the mob against each other, then sweep through with heavy slashes.",
       "de": "Hetze die Ritter mit der Laute gegeneinander auf und fege mit Rundumschlägen durch die Reihen."
@@ -745,7 +745,7 @@ const MORTAL_SHELL_BOSSES = [
       "Beichtvater-Andenken"
     ],
     "tarReward": "5,664 Gloom, Confessor's Keepsake x1",
-    "tarRewardDE": "5.664 Düster, Beichtvater-Andenken x1",
+    "tarRewardDE": "5.664 Düsteressenz, Beichtvater-Andenken x1",
     "strategy": {
       "en": "Heavy telegraphed sickle attacks. Parry each stroke cleanly to stagger him, or soften him up with ranged shots.",
       "de": "Führt langsame, schwere Sensenschwünge. Pariere sauber oder halte ihn mit Schusswaffen auf Distanz."
@@ -782,7 +782,7 @@ const MORTAL_SHELL_BOSSES = [
       "Schorfstein des Gefangenen"
     ],
     "tarReward": "12,673 Gloom, Captive's Scabstone x1",
-    "tarRewardDE": "12.673 Düster, Schorfstein des Gefangenen x1",
+    "tarRewardDE": "12.673 Düsteressenz, Schorfstein des Gefangenen x1",
     "strategy": {
       "en": "A titan with a massive blade stuck through his head! Parrying his rotating head swings shatters his posture completely.",
       "de": "Titan mit einem Schwert im Schädel. Das lückenlose Parieren seiner Kopfdrehungen bricht seine Haltung komplett."
@@ -856,7 +856,7 @@ const MORTAL_SHELL_BOSSES = [
       "Flammeninfusion"
     ],
     "tarReward": "9,332 Gloom, Glimpse x1",
-    "tarRewardDE": "9.332 Düster, Blick x1",
+    "tarRewardDE": "9.332 Düsteressenz, Blick x1",
     "strategy": {
       "en": "Wields a consecrated gold scepter dealing radiant shockwaves. Time parries when he raises the scepter above his head.",
       "de": "Führt ein goldenes Zepter mit Schockwellen. Pariere im Moment des Ausholens über dem Kopf."
@@ -893,7 +893,7 @@ const MORTAL_SHELL_BOSSES = [
       "Weihrauch-Betäubung"
     ],
     "tarReward": "6,890 Gloom, Sester's Crest x1, Black Needle x1",
-    "tarRewardDE": "6.890 Düster, Sestern-Wappen x1, Schwarze Nadel x1",
+    "tarRewardDE": "6.890 Düsteressenz, Sestern-Wappen x1, Schwarze Nadel x1",
     "strategy": {
       "en": "Agile dual casters. Separate them to prevent synchronized bell chants, and interrupt their healing rituals.",
       "de": "Zwei agile Zauberinnen. Trenne sie, um synchronisierte Glockenrituale und Heilungen zu verhindern."
@@ -930,7 +930,7 @@ const MORTAL_SHELL_BOSSES = [
       "Seitliches Ausweichen"
     ],
     "tarReward": "9,241 Gloom, Monarch's Vestige x1",
-    "tarRewardDE": "9.241 Düster, Monarchen-Überbleibsel x1",
+    "tarRewardDE": "9.241 Düsteressenz, Monarchen-Überbleibsel x1",
     "strategy": {
       "en": "A fallen king driven mad by illusions. He teleports across thrones—time attacks right after he lands.",
       "de": "Ein dem Wahnsinn verfallener König. Teleportiert zwischen Thronen – schlage nach der Landung zu."
@@ -967,7 +967,7 @@ const MORTAL_SHELL_BOSSES = [
       "Sariel-Hülle"
     ],
     "tarReward": "3,500 Gloom, Clockwork Scythe x1, Sariel (Shell)",
-    "tarRewardDE": "3.500 Düster, Uhrwerk-Sense x1, Sariel (Hülle)",
+    "tarRewardDE": "3.500 Düsteressenz, Uhrwerk-Sense x1, Sariel (Hülle)",
     "strategy": {
       "en": "Wields the Clockwork Scythe with time-dilation attacks. Parry the delayed slash to unlock her shell.",
       "de": "Führt eine Uhrwerk-Sense mit Zeitverzögerung. Pariere den verzögerten Hieb für den Sieg."
@@ -1004,7 +1004,7 @@ const MORTAL_SHELL_BOSSES = [
       "Großschwert-Parade"
     ],
     "tarReward": "5,931 Gloom, Curseblood Stone x1",
-    "tarRewardDE": "5.931 Düster, Fluchblutstein x1",
+    "tarRewardDE": "5.931 Düsteressenz, Fluchblutstein x1",
     "strategy": {
       "en": "Spectral knight shielded by floating grimoires. Destroy the books first to break his invulnerability.",
       "de": "Zerstöre zuerst die umkreisenden Bücher, um seinen Schutzschild zu brechen und ihn zu parieren."
@@ -1041,7 +1041,7 @@ const MORTAL_SHELL_BOSSES = [
       "Giftschutz"
     ],
     "tarReward": "15,165 Gloom, Voltaic Essence x1, Viletongue Hedron x1",
-    "tarRewardDE": "15.165 Düster, Voltaische Essenz x1, Hedron x1",
+    "tarRewardDE": "15.165 Düsteressenz, Voltaische Essenz x1, Hedron x1",
     "strategy": {
       "en": "Fierce dual boss combining aerial shrieks and toxic bile. Focus the Harridan down first.",
       "de": "Doppelboss aus Schreien und Galle. Schalte zuerst die Furie mit gezielten Schlägen aus."
@@ -1115,7 +1115,7 @@ const MORTAL_SHELL_BOSSES = [
       "Kopfschüsse"
     ],
     "tarReward": "38,753 Gloom, Hexapod Core x1",
-    "tarRewardDE": "38.753 Düster, Hexapoden-Kern x1",
+    "tarRewardDE": "38.753 Düsteressenz, Hexapoden-Kern x1",
     "strategy": {
       "en": "Multi-limbed horror. Focus attacks on one side of its legs to stumble it, and harden through its charge.",
       "de": "Fokussiere Angriffe auf eine Beinseite, um das Ungetüm zu Fall zu bringen, und verhärte dich beim Sturmlauf."
@@ -1152,7 +1152,7 @@ const MORTAL_SHELL_BOSSES = [
       "Schwere Wucht"
     ],
     "tarReward": "1,835 Gloom, Strange Remnant x1, Grisha Remnant x1",
-    "tarRewardDE": "1.835 Düster, Merkwürdiges Relikt x1, Grisha-Relikt x1",
+    "tarRewardDE": "1.835 Düsteressenz, Merkwürdiges Relikt x1, Grisha-Relikt x1",
     "strategy": {
       "en": "Tide-soaked Grisha dealing frost buildup. Break its posture with hammer slams.",
       "de": "Kämpft mit Frostschaden. Brich seine Haltung mit schweren Hammerschlägen."
@@ -1189,7 +1189,7 @@ const MORTAL_SHELL_BOSSES = [
       "Knochenkeulen-Parade"
     ],
     "tarReward": "38,753 Gloom, Conqueror's Reward x1",
-    "tarRewardDE": "38.753 Düster, Belohnung des Eroberers x1",
+    "tarRewardDE": "38.753 Düsteressenz, Belohnung des Eroberers x1",
     "strategy": {
       "en": "Skeletal lord wielding a massive bone club and homing frost skulls. Roll through projectiles and parry his club swings.",
       "de": "Skelettierter Herrscher mit Knochenkeule und Frostschädeln. Rolle durch Geschosse und pariere seine Keule."
@@ -1226,7 +1226,7 @@ const MORTAL_SHELL_BOSSES = [
       "Grisha zuerst besiegen"
     ],
     "tarReward": "10,132 Gloom, Fusillade Stone x1, Coin x1000",
-    "tarRewardDE": "10.132 Düster, Fusillade-Stein x1, 1000 Münzen",
+    "tarRewardDE": "10.132 Düsteressenz, Fusillade-Stein x1, 1000 Münzen",
     "strategy": {
       "en": "Execute heavy jumping attacks on Urrig after parrying his giant halberd. Defeat the unleashed Grisha with fire.",
       "de": "Führe schwere Sprungangriffe auf Urrig nach Paraden aus. Verbrenne die freigelassene Grisha."
@@ -1263,7 +1263,7 @@ const MORTAL_SHELL_BOSSES = [
       "Glimmender Streitkolben"
     ],
     "tarReward": "54,254 Gloom, Scholar's Wormstone x1",
-    "tarRewardDE": "54.254 Düster, Wurmstein des Gelehrten x1",
+    "tarRewardDE": "54.254 Düsteressenz, Wurmstein des Gelehrten x1",
     "strategy": {
       "en": "Moth hybrid noble. Shoot him down with sidearm shots when he hovers to interrupt his spore storm.",
       "de": "Schieße ihn mit der Schusswaffe ab, wenn er in der Luft schwebt, um seinen Sporensturm zu stoppen."
@@ -1300,7 +1300,7 @@ const MORTAL_SHELL_BOSSES = [
       "Entschlossenheit"
     ],
     "tarReward": "13,885 Gloom, Solnir Shard x1, Glimpse x1",
-    "tarRewardDE": "13.885 Düster, Solnir-Splitter x1, Blick x1",
+    "tarRewardDE": "13.885 Düsteressenz, Solnir-Splitter x1, Blick x1",
     "strategy": {
       "en": "Armored gloom warrior. Parry his thrust attacks and punish him with weapon abilities.",
       "de": "Gepanzerter Düsterkrieger. Pariere seine Stöße und kontere mit Waffenfertigkeiten."
@@ -1337,7 +1337,7 @@ const MORTAL_SHELL_BOSSES = [
       "Larven ausweichen"
     ],
     "tarReward": "65,511 Gloom, Monolith Fragment x1",
-    "tarRewardDE": "65.511 Düster, Monolith-Fragment x1",
+    "tarRewardDE": "65.511 Düsteressenz, Monolith-Fragment x1",
     "strategy": {
       "en": "Towering obsidian construct that launches volatile larvae. Break its crystalline core with hammer strikes.",
       "de": "Riesiges Obsidian-Konstrukt. Zerschmettere seinen Kristallkern mit Hammerschlägen."
@@ -1374,7 +1374,7 @@ const MORTAL_SHELL_BOSSES = [
       "Feuer-Teersteine"
     ],
     "tarReward": "64,442 Gloom, Orrem's Head x1",
-    "tarRewardDE": "64.442 Düster, Orrems Kopf x1",
+    "tarRewardDE": "64.442 Düsteressenz, Orrems Kopf x1",
     "strategy": {
       "en": "Fallen champion with sweeping polearm and radiant beam attacks. Dodge behind his beam and strike his heels.",
       "de": "Champion mit Stangenwaffe und Strahlungsangriffen. Weiche hinter den Strahl und attackiere seine Fersen."

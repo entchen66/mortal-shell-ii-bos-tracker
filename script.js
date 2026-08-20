@@ -14,7 +14,7 @@ const UI_TRANSLATIONS = {
     musicOff: "🔇 Musik: Aus",
     statBosses: "Bosse Besiegt",
     statBeacons: "Leuchtfeuer Erreicht",
-    statTar: "Gesammelter Teer",
+    statTar: "Düsteressenz",
     statProgress: "Gesamtfortschritt",
     resolveLabel: "ENTENTSCHLOSSENHEIT / VERHÄRTUNG",
     searchPlaceholder: "Boss, Leuchtfeuer, Ort oder Taktik suchen...",
@@ -29,7 +29,7 @@ const UI_TRANSLATIONS = {
     closestBeaconLabel: "Nächstes Leuchtfeuer",
     locationLabel: "Fundort / Arena",
     recommendedShell: "Empfohlene Hülle / Taktik",
-    reward: "Beute & Teer",
+    reward: "Beute & Düsteressenz",
     strategyTitle: "Kampftaktik & Konter",
     loreTitle: "Beschreibung & Zitat",
     markSlain: "Als Besiegt Markieren",
@@ -45,7 +45,7 @@ const UI_TRANSLATIONS = {
     musicOff: "🔇 Music: Off",
     statBosses: "Bosses Vanquished",
     statBeacons: "Beacons Reached",
-    statTar: "Tar Accumulated",
+    statTar: "Gloom Essence",
     statProgress: "Total Completion",
     resolveLabel: "RESOLVE / HARDEN PROGRESS",
     searchPlaceholder: "Search boss, beacon, location, or tactic...",
@@ -60,7 +60,7 @@ const UI_TRANSLATIONS = {
     closestBeaconLabel: "Closest Beacon",
     locationLabel: "Location / Arena",
     recommendedShell: "Recommended Shell / Synergy",
-    reward: "Loot & Tar",
+    reward: "Loot & Gloom",
     strategyTitle: "Combat Tactics & Counters",
     loreTitle: "Description & Quote",
     markSlain: "Mark as Vanquished",
@@ -457,7 +457,7 @@ function updateStats() {
   MORTAL_SHELL_BOSSES.forEach((b) => {
     if (slainBosses.has(b.id)) {
       visitedBeacons.add(b.closestBeacon);
-      const match = (b.tarReward || "").match(/([\d,]+)\s*(Tar|Gloom)/i);
+      const match = (b.tarReward || "").match(/([\d,]+)\s*(?:Gloom|Tar)/i);
       if (match) {
         totalTarValue += parseInt(match[1].replace(/,/g, ""), 10);
       }
@@ -466,7 +466,7 @@ function updateStats() {
 
   document.getElementById("stat-bosses-val").textContent = `${countSlain} / ${totalBosses}`;
   document.getElementById("stat-glands-val").textContent = `${visitedBeacons.size} / 25`;
-  document.getElementById("stat-tar-val").textContent = `${totalTarValue.toLocaleString()} ⛯`;
+  document.getElementById("stat-tar-val").textContent = `${totalTarValue.toLocaleString()} 🔮`;
   document.getElementById("stat-progress-val").textContent = `${percent}%`;
 
   const fillEl = document.getElementById("resolve-progress-fill");
@@ -769,6 +769,7 @@ function updateStaticTexts() {
   document.getElementById("resolve-meter-lbl").textContent = t.resolveLabel;
 
   document.getElementById("search-input").placeholder = t.searchPlaceholder;
+  document.getElementById("modal-lbl-reward").textContent = `🔮 ${t.reward}`;
   document.getElementById("quick-nav-header-title").textContent = t.quickNavTitle;
   document.getElementById("footer-credits-text").textContent = t.credits;
 
